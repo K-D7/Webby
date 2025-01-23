@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Mampuru II School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        header {
+            background: #000;
+            color: #D4AF37;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #D4AF37;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            display: none; /* Hide sections by default */
+        }
+
+        section.active {
+            display: block; /* Show only the active section */
+        }
+
+        footer {
+            background: #000;
+            color: #D4AF37;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        ul li a {
+            color: #D4AF37;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            color: #000;
+        }
+
+        #contact {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+
+        .home-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .home-section h2 {
+            color: #D4AF37;
+        }
+
+        .home-section p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        iframe {
+            border: 0;
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        .directions-link {
+            color: #D4AF37;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .directions-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Show home section by default
+            showSection('home');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="Image.jpg" alt="King Mampuru II School Logo">
+        <h1>King Mampuru II School</h1>
+    </header>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('contact')">Contact</a>
+        <a onclick="showSection('location')">Location</a>
+    </nav>
+    <main>
+        <section id="home" class="home-section active">
+            <h2>Welcome to King Mampuru II School</h2>
+            <p>Where we aspire, learn, and achieve together. Our school provides a nurturing environment for students to grow academically, socially, and emotionally.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                1. Purpose of the Teaching and Learning Policy
+                The purpose of this policy is to provide structured guidance on teaching and learning at King Mampuru II Private School, ensuring an environment conducive to academic excellence and compliant with the South African Department of Education's standards. This policy ensures equitable, effective, and holistic education that upholds the values of inclusivity, respect, and lifelong learning. The policy is designed to support the achievement of educational outcomes that reflect the South African National Qualifications Framework (NQF), ensuring that all learners acquire the skills and knowledge necessary to be productive citizens in a diverse society.
+                Additionally, this policy is aligned with the South African Schools Act, the White Paper on Education, and the National Development Plan (Vision 2030), which highlight the importance of improving education quality, equity, and accessibility across the country.<br>
+                <br> 2. Guiding Principles and Philosophy <br>
+                Our teaching philosophy is founded on the following principles:
+                <br> •	Inclusivity and Equity: Every learner has the right to access quality education, with efforts to close gaps in achievement and support learners of diverse backgrounds. This includes learners with disabilities, those from socio-economically disadvantaged backgrounds, and those who require English as an additional language support.
+                <br>•	Holistic Development: Emphasis on cognitive, emotional, social, and physical development to prepare learners for lifelong success. This involves promoting critical thinking, problem-solving, and emotional intelligence alongside academic excellence.
+                <br>•	High Expectations: Challenging learners to reach their full potential through rigorous academic standards, resilience, and goal-setting. Setting high expectations encourages a growth mind-set where students believe in their ability to succeed through effort and perseverance.
+                <br> •	Respect and Community: Cultivating a respectful, empathetic, and supportive community that values collaboration and citizenship. We emphasize social responsibility, ethics, and the importance of developing a sense of belonging and responsibility toward others in the school and the broader community.
+                <br>•	Accountability and Transparency: Ensuring that both students and educators are accountable for their roles in the learning process, and maintaining transparency in how educational goals are set, achieved, and evaluated.<br>
+                <br> 3. Curriculum Framework
+                The curriculum framework at King Mampuru II Private School is developed per the Curriculum and Assessment Policy Statements (CAPS) as mandated by the Department of Basic Education.
+                <br>
+                <br> 3.1 Compliance with CAPS
+                CAPS guides the curriculum across all subjects, phases, and grades. Each subject and grade level has detailed content specifications, learning objectives, and expected outcomes. The curriculum is designed to promote intellectual development, creativity, and critical thinking, while also ensuring that students develop foundational literacy and numeracy skills.
+                <br>3.2 Curriculum Phases
+                <br>•	Foundation Phase (Grades R-3): Prioritizes literacy, numeracy, and life skills, aiming to build foundational cognitive and motor skills through integrated and exploratory learning. Special attention is given to early childhood development and readiness for future academic challenges.
+                <br> •	Intermediate Phase (Grades 4-6): Expands core academic skills with focused study in languages, mathematics, science, and social studies. The phase also introduces basic problem-solving skills and encourages learners to become more independent and self-directed in their learning.
+                <br>•	Senior Phase (Grades 7-9): Encourages deeper understanding and critical thinking, preparing learners for high school and further academic challenges. The curriculum includes subjects such as natural science, mathematics, social science, technology, and languages, with an increasing focus on specialization to prepare students for specific career pathways.
+                <br> •	Further Education and Training (FET) Phase (Grades 10-12): Prepares learners for the National Senior Certificate (NSC) and post-school opportunities, including university, technical education, and the workforce. A broader range of elective subjects becomes available, and students are encouraged to follow subject choices that align with their career aspirations.
+                <br> <br>3.3 Language Policy
+                English is the primary language of instruction, supplemented with additional support in a second official language per Department of Education requirements to promote bilingual proficiency. Language instruction focuses not only on fluency but also on fostering intercultural communication skills.
+                <br> •	Home Language: Emphasis is placed on the development of learners' home language skills to strengthen their cognitive and communicative abilities.
+                <br> •	Second Language: Instruction in a second language is also provided, with special support for learners who may require extra assistance in language acquisition.
+                <br> <br>3.4 Life Skills Education
+                In line with CAPS, life skills education is integrated across all phases of the curriculum. This includes not only health education and physical education but also life orientation, career guidance, and critical thinking development.<br>
+                
+                <br> 4. Pedagogical Approaches and Instructional Strategies
+                Our pedagogical approach aligns with the Department of Education's focus on learner-cantered methodologies, encompassing various instructional strategies to accommodate diverse learning needs and styles.<br>
+                <br> •	Active Learning: Encouraging learner participation, inquiry, and hands-on experiences to reinforce knowledge. Learners are actively involved in their learning process through questioning, discovery, and collaboration.
+                <br>  •	Differentiated Instruction: Tailoring lessons to accommodate varied learner abilities, backgrounds, and learning styles. Instructional strategies are adjusted to meet the individual needs of learners, whether they are struggling or excelling.
+                <br> •	Collaborative Learning: Using group work, peer learning, and projects to develop teamwork, communication, and problem-solving skills. Collaboration fosters social interaction and promotes shared learning experiences.
+                <br>•	Blended Learning: Integrating technology, including e-learning tools and multimedia, with traditional teaching to enhance engagement. The use of digital resources complements classroom teaching, providing additional learning pathways for students.
+                <br>•	Inquiry-Based Learning: Promoting critical thinking and curiosity through research projects, case studies, and real-world applications. This approach encourages learners to explore topics independently and ask questions that lead to deeper understanding.<br>
+                <br> 5. Assessment and Evaluation
+                Our assessment approach is structured to support both formative and summative evaluation, as mandated by the Department of Education.
+                <br><br> 5.1 Formative Assessments
+                <br> •	Continuous Feedback: Includes regular quizzes, class activities, peer assessments, and teacher feedback. This feedback informs teaching practices and helps learners track their progress.
+                <br> •	Learning Portfolios: Learners compile work demonstrating progress in various areas, offering insight into long-term development. Portfolios provide a holistic view of a learner's academic journey and personal growth.
+                <br> •	Self-Assessment: Learners evaluate their own understanding and set personal goals. This promotes self-reflection and responsibility for their learning process.
+                <br><br> 5.2 Summative Assessments
+                <br>•	Term Exams: Conducted according to CAPS schedules and grading rubrics to measure learning outcomes. Summative assessments allow learners to demonstrate their understanding at key points during the academic year.
+                <br> •	Standardized Tests: Administered to benchmark learner performance in line with national standards. These tests help identify areas for improvement and provide insight into broader educational trends.
+                <br><br> 5.3 Record Keeping and Reporting
+                Assessment records are meticulously maintained to track learner progress and are used to generate termly reports for parents, as well as annual reviews to guide school-level planning and curriculum refinement.
+                <br> •	Parental Communication: Reports are communicated to parents regularly to keep them informed of their child's progress, and meetings are held to discuss any areas that need attention.<br>
+                <br>6. Learner Support and Development
+                The school is committed to supporting learners' academic, emotional, and social development as part of a holistic approach:
+                <br> •	Individualized Support Programs: For learners needing academic or emotional support, including specialized interventions. This may involve remedial programs, learning support, or behavioural interventions tailored to the learner's specific needs.
+                <br> •	Wellness Services: Access to counselling and wellness programs promoting mental health and resilience. We aim to create a positive and supportive school culture that prioritizes emotional well-being.
+                <br> •	Learning Enrichment: Advanced classes and extra-curricular programs for high-achieving learners to support further skill development. These opportunities help learners who are excelling academically to reach their full potential.<br>
+               <br> 7. Inclusion and Differentiation
+                In accordance with the Department of Education's inclusion guidelines, King Mampuru II Private School emphasizes the following:
+                <br> •	Differentiation in Instruction: Adapting teaching methods and materials to meet the diverse needs of learners, including gifted and differently-abled learners. Differentiation ensures that all learners are appropriately challenged and supported.
+                <br>•	Accessible Learning Materials: Utilizing inclusive resources that support learners with varying needs, ensuring all content is adaptable and accessible. This may involve providing resources in multiple formats, such as digital textbooks, audio files, and large print versions.<br>
+               <br> 8. Technology Integration in Teaching and Learning
+                The Department of Education encourages digital literacy, which we aim to achieve through:
+                <br> •	Digital Literacy Skills: Incorporating computer studies, information technology classes, and digital safety in the curriculum. This equips learners with essential skills for the modern world.
+                <br> •	Blended Classrooms: Employing e-learning platforms, digital assessments, and online collaboration tools to enrich traditional teaching. These tools facilitate remote learning, enhance classroom engagement, and allow for real-time assessment and feedback.
+                <br> •	Responsible Digital Citizenship: Teaching responsible, ethical, and safe online behaviours aligned with South African legal and ethical guidelines. Students are educated on the risks of the digital world and how to navigate it safely.<br>
+               <br> 9. Roles and Responsibilities
+                The effective implementation of this policy relies on the commitment of all stakeholders:
+                <br> •	Educators: Responsible for lesson planning, differentiated instruction, assessment, and adherence to CAPS. They are also tasked with creating a safe, inclusive, and engaging classroom environment.
+                <br> •	Learners: Expected to engage actively, complete assignments, and adhere to the school Code of Conduct. Learners must take responsibility for their learning and development.
+                <br>•	School Leadership: Accountable for resource provision, curriculum oversight, and policy enforcement. School leadership plays a key role in ensuring that the school meets its educational goals and complies with regulations.
+                <br>•	Parents/Guardians: Encouraged to support their children's academic journey, reinforce school policies, and communicate regularly with teachers. Parents are partners in the educational process, and their involvement is crucial for student success.<br>
+               <br> 10. Professional Development for Educators
+                Continuous professional development ensures that educators are equipped to deliver high-quality instruction:
+                <br> •	Training Workshops: Regular, targeted training on CAPS, differentiated instruction, assessment techniques, and digital teaching tools. Educators stay current with the latest educational methodologies and technology.
+                <br> •	Professional Learning Communities: Facilitated discussions and peer learning sessions to exchange best practices and stay current on educational research. These communities foster a culture of lifelong learning among educators.
+                <br> •	Performance Evaluations: Annual reviews of teaching staff to support growth and address any areas for improvement. Evaluations help identify strengths and areas where additional support or training is needed.<br>
+              <br>  11. Health, Safety, and Wellbeing in Teaching and Learning
+                The school prioritizes learner safety and well-being in line with Department of Education standards:
+                <br> •	Safe Classroom Environment: Classrooms are maintained as safe, inclusive spaces, free from bullying and discrimination. Efforts are made to create an atmosphere where all learners feel valued and respected.
+                <br>•	Health Education: Curriculum includes health and life skills classes to promote physical and mental well-being. This includes teaching learners about hygiene, nutrition, emotional resilience, and personal safety.
+                <br> •	Emergency Preparedness: Regular drills and a clear response plan for emergencies, including health crises. School staff are trained in first aid, and clear communication systems are in place to address emergencies swiftly.<br>
+               <br> 12. Monitoring and Quality Assurance
+                School leaders conduct regular monitoring to evaluate policy effectiveness and ensure quality education:
+                <br> •	Classroom Observations: School administrators observe lessons to provide feedback and support. These observations help ensure that teaching practices align with the school's educational philosophy.
+                <br> •	Data Analysis: Regular analysis of learner performance data to identify trends, make improvements, and adjust teaching strategies. Data is also used to identify support needs for individual learners.
+                <br> •	Stakeholder Surveys: Gathering input from parents, teachers, and learners on educational quality to refine teaching practices. Surveys provide valuable feedback on how the policy is implemented and perceived by the school community.<br>
+               <br> 13. Parental and Community Involvement
+                In line with the Department of Education's community engagement policies:
+                <br>•	Regular Parent Meetings: Scheduled conferences and open houses to discuss learner progress and school initiatives. These meetings foster open communication between the school and families.
+                <br> •	Volunteer Programs: Opportunities for parents to participate in school activities and events. Parents are encouraged to be actively involved in their children's education, both inside and outside the classroom.
+                <br> •	Community Outreach: Collaborations with local organizations for field trips, guest speakers, and learning opportunities beyond the classroom. These partnerships enrich the educational experience and provide learners with real-world connections to their studies.<br>
+                <br>14. Policy Review and Amendments
+                This policy will be reviewed annually to ensure continued alignment with Department of Education requirements and the school's educational mission. Updates will be communicated transparently to all stakeholders, and input from teachers, parents, and learners will be considered during the review process.
+                This Teaching and Learning Policy reflects King Mampuru II Private School's commitment to fostering an educational environment that is equitable, inclusive, and committed to excellence, aligned with South African educational standards. The school will continuously strive to enhance the quality of education, promote inclusivity, and support the holistic development of all learners.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Good evening Parents. The following are the contact numbers for the teachers in case you need to communicate with them:</p>
+            
+            <h3>Administrators</h3>
+                <ul>
+                    <li>Contact 1: <a href="tel:+27823522965">082 352 2965</a> </li>
+                    <li>Contact 2: <a href="tel:+27825998003">082 599 8003</a> </li>
+                </ul>
+
+            <h3>Grade R</h3>
+            <ul>
+                <li>Mam Whitney: <a href="tel:+2765991827">076 599 1827</a></li>
+                <li>Mam Nkopodi: <a href="tel:+2762846074">076 284 6074</a></li>
+            </ul>
+    
+            <h3>Grade 1</h3>
+            <ul>
+                <li>Mam Manyaka: <a href="tel:+2768602831">076 860 2831</a></li>
+                <li>Mam Phokanoka: <a href="tel:+27822942147">082 294 2147</a></li>
+            </ul>
+    
+            <h3>Grade 2</h3>
+            <ul>
+                <li>Mam Selina: <a href="tel:+27608585768">060 858 5768</a></li>
+                <li>Mam Thatego: <a href="tel:+27824033029">082 403 3029</a></li>
+            </ul>
+    
+            <h3>Grade 3</h3>
+            <ul>
+                <li>Mam G: <a href="tel:+27721582831">072 158 2831</a></li>
+            </ul>
+    
+            <h3>Grade 4-7</h3>
+            <ul>
+                <li>Mam Helen: <a href="tel:+27650916067">065 091 6067</a></li>
+                <li>Mr Telimon: <a href="tel:+27638258400">063 825 8400</a></li>
+                <li>Mr Ndlovu: <a href="tel:+27602351189">060 235 1189</a></li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Our Location</h2>
+            <p>Visit us at: Stand no, New Hospital Road Vergelegen C, 897 Hospital View, Jane Furse, 1085</p>
+            <h3>Find Us on the Map:</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.8526056533074!2d29.853842974337947!3d-24.73194000563669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec19fbaa4707e21%3A0x8d09d15d103b1bc9!2sKing%20Mampuru%20Private%20School!5e0!3m2!1sen!2sza!4v1737577976830!5m2!1sen!2sza" 
+                width="100%" 
+                height="300" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </div>
+            <p><a href="https://maps.app.goo.gl/DmxskD16x6RjcsXB9" target="_blank" class="directions-link">Get Directions</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 King Mampuru II School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
