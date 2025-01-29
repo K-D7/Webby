@@ -54,6 +54,25 @@
             display: block; /* Show only the active section */
         }
 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #D4AF37;
+            border-radius: 10px;
+        }
+        
+
+
         footer {
             background: #000;
             color: #D4AF37;
@@ -145,6 +164,7 @@
     <nav>
         <a onclick="showSection('home')">Home</a>
         <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('gallery')">Gallery</a>
         <a onclick="showSection('contact')">Contact</a>
         <a onclick="showSection('location')">Location</a>
         <a onclick="showSection('mission')">Our Mission</a>
@@ -247,6 +267,16 @@
                 This policy will be reviewed annually to ensure continued alignment with Department of Education requirements and the school's educational mission. Updates will be communicated transparently to all stakeholders, and input from teachers, parents, and learners will be considered during the review process.
                 This Teaching and Learning Policy reflects King Mampuru II Private School's commitment to fostering an educational environment that is equitable, inclusive, and committed to excellence, aligned with South African educational standards. The school will continuously strive to enhance the quality of education, promote inclusivity, and support the holistic development of all learners.</p>
         </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="IMG-20250128-WA0001.jpg" alt="School Image 1">
+                <img src="IMG-20250128-WA0002.jpg" alt="School Image 2">
+                <img src="IMG-20250128-WA0003.jpg" alt="School Image 3">
+                <img src="IMG-20250128-WA0004.jpg" alt="School Image 4">
+                <img src="IMG-20250128-WA0005.jpg" alt="School Image 5">
+            </div>
+            </section>
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Good evening Parents. The following are the contact numbers for the teachers in case you need to communicate with them:</p>
