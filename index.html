@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            width: 1000px;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -139,6 +140,20 @@
         .directions-link:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 600px) {
+            body {
+            width: 500px;
+        }
+        }
+
+        @media (min-width: 600px) {
+            body {
+            width: 100%;
+        }
+        }
+
+        
     </style>
     <script>
         function showSection(sectionId) {
@@ -154,6 +169,9 @@
             // Show home section by default
             showSection('home');
         });
+
+
+
     </script>
 </head>
 <body>
@@ -270,11 +288,23 @@
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="gallery">
-                <img src="IMG-20250128-WA0001.jpg" alt="School Image 1">
-                <img src="IMG-20250128-WA0002.jpg" alt="School Image 2">
-                <img src="IMG-20250128-WA0003.jpg" alt="School Image 3">
-                <img src="IMG-20250128-WA0004.jpg" alt="School Image 4">
-                <img src="IMG-20250128-WA0005.jpg" alt="School Image 5">
+                
+                <a href="IMG-20250128-WA0001.jpg" target="_blank">
+                    <img src="IMG-20250128-WA0001.jpg" alt="Clickable Image" width="300">
+                </a>
+                
+                <a href="IMG-20250128-WA0002.jpg" target="_blank">
+                    <img src="IMG-20250128-WA0002.jpg" alt="Clickable Image" width="300">
+                </a>
+                <a href="IMG-20250128-WA0003.jpg" target="_blank">
+                    <img src="IMG-20250128-WA0003.jpg" alt="Clickable Image" width="300">
+                </a>
+                <a href="IMG-20250128-WA0004.jpg" target="_blank">
+                    <img src="IMG-20250128-WA0004.jpg" alt="Clickable Image" width="300">
+                </a>
+                <a href="IMG-20250128-WA0005.jpg" target="_blank">
+                    <img src="IMG-20250128-WA0005.jpg" alt="Clickable Image" width="300">
+                </a>
             </div>
             </section>
         <section id="contact">
