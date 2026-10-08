@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>VaporVault | South Africa's Premium Vape Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0C0C0F;
+  --bg2:#141418;
+  --bg3:#1A1A22;
+  --purple:#7C3AED;
+  --purple-light:#9D65F5;
+  --purple-glow:rgba(124,58,237,.25);
+  --teal:#00D4CC;
+  --white:#FFFFFF;
+  --grey:#9CA3AF;
+  --light-grey:#4B5563;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden}
+
+
+
+/* NAV */
+nav{background:rgba(12,12,15,.95);backdrop-filter:blur(12px);padding:0 48px;display:flex;justify-content:space-between;align-items:center;height:68px;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(124,58,237,.2)}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;letter-spacing:1px;color:var(--white)}
+.nav-logo span{color:var(--purple-light)}
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links a{color:var(--grey);text-decoration:none;font-size:14px;font-weight:500;padding:0 18px;height:68px;display:flex;align-items:center;transition:color .2s;letter-spacing:.3px}
+.nav-links a:hover{color:var(--white)}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-search{background:var(--bg3);border:1px solid rgba(124,58,237,.3);color:var(--white);padding:8px 14px;font-family:'Barlow',sans-serif;font-size:13px;width:200px;outline:none;transition:border-color .2s}
+.nav-search:focus{border-color:var(--purple)}
+.nav-search::placeholder{color:var(--light-grey)}
+.nav-cart{background:var(--purple);color:var(--white);border:none;padding:9px 20px;font-family:'Barlow',sans-serif;font-size:13px;font-weight:600;cursor:pointer;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.age-badge{background:var(--bg3);border:1px solid rgba(124,58,237,.3);color:var(--grey);font-size:12px;padding:8px 12px;font-weight:600;letter-spacing:.5px}
+
+/* HERO */
+.hero{min-height:88vh;background:var(--bg);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-glow{position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:var(--purple-glow);border-radius:50%;filter:blur(80px);pointer-events:none}
+.hero-glow-2{position:absolute;bottom:-150px;left:20%;width:400px;height:400px;background:rgba(0,212,204,.08);border-radius:50%;filter:blur(60px);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 48px;max-width:1400px;margin:0 auto;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.4);color:var(--purple-light);font-size:12px;font-weight:600;padding:6px 14px;letter-spacing:1px;margin-bottom:24px}
+.hero-tag-dot{width:6px;height:6px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(52px,7vw,96px);font-weight:900;line-height:.95;text-transform:uppercase;margin-bottom:24px}
+.hero h1 .line-2{color:var(--purple-light)}
+.hero p{font-size:16px;color:var(--grey);line-height:1.7;max-width:460px;margin-bottom:40px;font-weight:300}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-purple{background:var(--purple);color:var(--white);padding:15px 32px;font-family:'Barlow',sans-serif;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.5px;transition:background .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-purple:hover{background:var(--purple-light)}
+.btn-ghost{border:1px solid rgba(255,255,255,.2);color:var(--white);padding:15px 32px;font-family:'Barlow',sans-serif;font-size:14px;font-weight:500;text-decoration:none;transition:border-color .2s}
+.btn-ghost:hover{border-color:var(--purple-light)}
+.hero-visual{position:relative;height:460px;display:flex;align-items:center;justify-content:center}
+.hero-device{width:180px;height:360px;background:linear-gradient(160deg,#2a2a3e 0%,#1a1a2e 100%);border-radius:24px;border:1px solid rgba(124,58,237,.4);position:relative;display:flex;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(124,58,237,.3),0 0 120px rgba(124,58,237,.1)}
+.hero-device::before{content:'';position:absolute;top:16px;width:40px;height:4px;background:rgba(255,255,255,.15);border-radius:2px}
+.hero-device-screen{width:120px;height:200px;background:linear-gradient(160deg,rgba(124,58,237,.3),rgba(0,212,204,.2));border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.hero-device-text{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white)}
+.hero-device-sub{font-size:11px;color:var(--purple-light);letter-spacing:1px}
+.floating-badge{position:absolute;background:var(--bg2);border:1px solid rgba(124,58,237,.4);padding:12px 16px}
+.fb-1{top:40px;left:-20px}
+.fb-2{bottom:60px;right:-30px}
+.fb-title{font-size:11px;color:var(--purple-light);font-weight:600;letter-spacing:.5px}
+.fb-val{font-size:20px;font-weight:700;color:var(--white);margin-top:2px}
+.hero-stats{display:flex;gap:40px;margin-top:40px}
+.hero-stat-item{border-left:2px solid var(--purple);padding-left:14px}
+.hero-stat-num{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--white)}
+.hero-stat-label{font-size:12px;color:var(--grey);letter-spacing:.3px}
+
+/* CATEGORY STRIP */
+.cat-strip{background:var(--bg2);border-top:1px solid rgba(124,58,237,.15);border-bottom:1px solid rgba(124,58,237,.15);display:grid;grid-template-columns:repeat(5,1fr)}
+.cat-item{padding:24px 20px;text-align:center;text-decoration:none;color:var(--grey);border-right:1px solid rgba(255,255,255,.05);transition:background .2s,color .2s}
+.cat-item:last-child{border-right:none}
+.cat-item:hover{background:rgba(124,58,237,.1);color:var(--white)}
+.cat-icon{font-size:28px;margin-bottom:8px;display:block}
+.cat-name{font-size:13px;font-weight:600;letter-spacing:.3px;display:block}
+.cat-count{font-size:11px;color:var(--light-grey);margin-top:2px;display:block}
+
+/* PRODUCTS */
+.products{padding:80px 48px;background:var(--bg)}
+.products-inner{max-width:1400px;margin:0 auto}
+.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px}
+.section-tag{font-size:12px;color:var(--purple-light);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,4vw,42px);font-weight:800;text-transform:uppercase;line-height:1}
+.view-all{color:var(--purple-light);text-decoration:none;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px;transition:color .2s}
+.view-all:hover{color:var(--white)}
+.tabs{display:flex;gap:0;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.08)}
+.tab{padding:12px 24px;font-size:14px;font-weight:600;color:var(--grey);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;letter-spacing:.3px}
+.tab.active{color:var(--white);border-bottom-color:var(--purple)}
+.tab:hover{color:var(--white)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.product-card{background:var(--bg2);border:1px solid rgba(255,255,255,.06);overflow:hidden;transition:border-color .25s,transform .25s}
+.product-card:hover{border-color:rgba(124,58,237,.5);transform:translateY(-4px)}
+.product-img{height:200px;background:var(--bg3);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.product-img::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 80%,rgba(124,58,237,.15),transparent 70%)}
+.product-emoji{font-size:64px;position:relative;z-index:1}
+.product-badge{position:absolute;top:12px;left:12px;background:var(--purple);color:var(--white);font-size:10px;font-weight:700;padding:4px 8px;letter-spacing:.5px}
+.product-badge.new{background:var(--teal);color:var(--bg)}
+.product-info{padding:16px}
+.product-brand{font-size:11px;color:var(--purple-light);font-weight:600;letter-spacing:.5px;margin-bottom:4px}
+.product-name{font-size:15px;font-weight:600;color:var(--white);margin-bottom:4px;line-height:1.3}
+.product-desc{font-size:12px;color:var(--grey);margin-bottom:14px;line-height:1.5}
+.product-footer{display:flex;justify-content:space-between;align-items:center}
+.product-price{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white)}
+.product-price span{font-size:13px;color:var(--grey);text-decoration:line-through;margin-right:6px;font-family:'Barlow',sans-serif;font-weight:400}
+.add-btn{background:var(--purple);color:var(--white);border:none;padding:8px 16px;font-family:'Barlow',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s;letter-spacing:.3px}
+.add-btn:hover{background:var(--purple-light)}
+
+/* DELIVERY BAR */
+.delivery-bar{background:var(--bg3);border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);display:grid;grid-template-columns:repeat(4,1fr)}
+.delivery-item{padding:28px 32px;display:flex;align-items:center;gap:16px;border-right:1px solid rgba(255,255,255,.05)}
+.delivery-item:last-child{border-right:none}
+.delivery-icon{font-size:28px;flex-shrink:0}
+.delivery-title{font-size:14px;font-weight:700;color:var(--white);margin-bottom:2px}
+.delivery-desc{font-size:12px;color:var(--grey)}
+
+/* WHY US */
+.why-us{padding:80px 48px;background:var(--bg2)}
+.why-us-inner{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why-us-text .section-tag{margin-bottom:10px}
+.why-us-text .section-title{margin-bottom:20px}
+.why-us-text p{font-size:16px;color:var(--grey);line-height:1.8;margin-bottom:32px;font-weight:300}
+.feature-list{display:flex;flex-direction:column;gap:16px}
+.feature-item{display:flex;align-items:flex-start;gap:14px}
+.feature-check{width:24px;height:24px;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.5);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--purple-light);flex-shrink:0;margin-top:2px}
+.feature-title{font-size:15px;font-weight:600;color:var(--white);margin-bottom:2px}
+.feature-desc{font-size:13px;color:var(--grey);line-height:1.5}
+.why-us-visual{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.why-card{background:var(--bg3);border:1px solid rgba(124,58,237,.15);padding:24px;text-align:center}
+.why-card-num{font-family:'Barlow Condensed',sans-serif;font-size:44px;font-weight:900;color:var(--purple-light);line-height:1}
+.why-card-label{font-size:13px;color:var(--grey);margin-top:4px}
+
+/* AGE GATE */
+.age-gate{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px}
+.age-gate h2{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;text-transform:uppercase;text-align:center}
+.age-gate p{font-size:16px;color:var(--grey);text-align:center;max-width:380px}
+.age-btns{display:flex;gap:16px}
+.age-yes{background:var(--purple);color:var(--white);border:none;padding:14px 48px;font-family:'Barlow',sans-serif;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:.5px}
+.age-no{background:transparent;color:var(--grey);border:1px solid rgba(255,255,255,.2);padding:14px 48px;font-family:'Barlow',sans-serif;font-size:16px;cursor:pointer}
+
+/* NEWSLETTER */
+.newsletter{padding:72px 48px;background:linear-gradient(135deg,rgba(124,58,237,.15) 0%,rgba(0,212,204,.05) 100%);border-top:1px solid rgba(124,58,237,.2);border-bottom:1px solid rgba(124,58,237,.2)}
+.newsletter-inner{max-width:600px;margin:0 auto;text-align:center}
+.newsletter h2{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:800;text-transform:uppercase;margin-bottom:10px}
+.newsletter p{font-size:15px;color:var(--grey);margin-bottom:28px}
+.newsletter-form{display:flex;gap:0}
+.newsletter-form input{flex:1;background:var(--bg3);border:1px solid rgba(124,58,237,.3);color:var(--white);padding:14px 18px;font-family:'Barlow',sans-serif;font-size:14px;outline:none}
+.newsletter-form input::placeholder{color:var(--light-grey)}
+.newsletter-form button{background:var(--purple);color:var(--white);border:none;padding:14px 28px;font-family:'Barlow',sans-serif;font-size:14px;font-weight:700;cursor:pointer;letter-spacing:.5px;white-space:nowrap}
+
+/* FOOTER */
+footer{background:var(--bg2);padding:56px 48px 24px;border-top:1px solid rgba(255,255,255,.05)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1400px;margin:0 auto 44px}
+.footer-brand-logo{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--white);margin-bottom:12px}
+.footer-brand-logo span{color:var(--purple-light)}
+.footer-brand p{font-size:13px;color:var(--grey);line-height:1.7;margin-bottom:20px;max-width:280px}
+.footer-socials{display:flex;gap:10px}
+.fsocial{width:36px;height:36px;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);display:flex;align-items:center;justify-content:center;color:var(--grey);text-decoration:none;font-size:13px;transition:all .2s}
+.fsocial:hover{background:var(--purple);color:var(--white);border-color:var(--purple)}
+.footer-col h4{font-size:12px;font-weight:700;color:var(--purple-light);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--grey);text-decoration:none;font-size:13px;transition:color .2s}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:20px;display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;font-size:12px;color:var(--light-grey)}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;padding:60px 24px}
+  .hero-visual{display:none}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-strip{grid-template-columns:repeat(3,1fr)}
+  .delivery-bar{grid-template-columns:1fr 1fr}
+  .why-us-inner{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  nav{padding:0 24px}
+  .nav-links,.nav-search{display:none}
+  .products,.why-us,.newsletter{padding:60px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div class="age-gate" id="ageGate">
+  <div style="font-size:48px">🔞</div>
+  <h2>Are You 18 or Older?</h2>
+  <p>VaporVault sells nicotine products. You must be 18 or older to enter this site.</p>
+  <div class="age-btns">
+    <button class="age-yes" onclick="document.getElementById('ageGate').style.display='none'">Yes, I'm 18+</button>
+    <button class="age-no" onclick="window.location='https://google.com'">No, Exit</button>
+  </div>
+</div>
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">VAPOR<span>VAULT</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Disposables</a></li>
+    <li><a href="#">Pod Kits</a></li>
+    <li><a href="#">E-Liquids</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="age-badge">18+</div>
+    <input type="text" class="nav-search" placeholder="Search products...">
+    <button class="nav-cart">🛒 Cart (0)</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag"><span class="hero-tag-dot"></span> South Africa's Premium Vape Store</div>
+      <h1>ELEVATE YOUR<br><span class="line-2">VAPE GAME</span></h1>
+      <p>Discover South Africa's widest range of premium vapes, pods, e-liquids and accessories. Fast delivery, expert advice and unbeatable prices — always.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-purple">Shop Now →</a>
+        <a href="#" class="btn-ghost">Find a Store</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item"><div class="hero-stat-num">40+</div><div class="hero-stat-label">Premium Brands</div></div>
+        <div class="hero-stat-item"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Products</div></div>
+        <div class="hero-stat-item"><div class="hero-stat-num">10K+</div><div class="hero-stat-label">Happy Customers</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-device">
+        <div class="hero-device-screen">
+          <div style="font-size:32px">💨</div>
+          <div class="hero-device-text">VAULTX</div>
+          <div class="hero-device-sub">PRO SERIES</div>
+        </div>
+      </div>
+      <div class="floating-badge fb-1">
+        <div class="fb-title">BATTERY</div>
+        <div class="fb-val">3000mAh</div>
+      </div>
+      <div class="floating-badge fb-2">
+        <div class="fb-title">PUFFS</div>
+        <div class="fb-val">15,000+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY STRIP -->
+<div class="cat-strip">
+  <a href="#" class="cat-item"><span class="cat-icon">🚬</span><span class="cat-name">Disposables</span><span class="cat-count">180+ products</span></a>
+  <a href="#" class="cat-item"><span class="cat-icon">📦</span><span class="cat-name">Pod Kits</span><span class="cat-count">64 products</span></a>
+  <a href="#" class="cat-item"><span class="cat-icon">💧</span><span class="cat-name">E-Liquids</span><span class="cat-count">220+ flavours</span></a>
+  <a href="#" class="cat-item"><span class="cat-icon">🔧</span><span class="cat-name">Accessories</span><span class="cat-count">95 products</span></a>
+  <a href="#" class="cat-item"><span class="cat-icon">⭐</span><span class="cat-name">Best Sellers</span><span class="cat-count">Top picks</span></a>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+  <div class="products-inner">
+    <div class="section-header">
+      <div>
+        <div class="section-tag">Featured Products</div>
+        <div class="section-title">Best Sellers</div>
+      </div>
+      <a href="#" class="view-all">View All →</a>
+    </div>
+    <div class="tabs">
+      <div class="tab active">All</div>
+      <div class="tab">Disposables</div>
+      <div class="tab">Pod Kits</div>
+      <div class="tab">E-Liquids</div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img"><div class="product-badge">HOT</div><span class="product-emoji">💜</span></div>
+        <div class="product-info">
+          <div class="product-brand">BOLT SERIES</div>
+          <div class="product-name">Bolt Max 15K Disposable</div>
+          <div class="product-desc">Grape Ice · 15,000 puffs · Rechargeable</div>
+          <div class="product-footer"><div class="product-price">R249</div><button class="add-btn">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><div class="product-badge new">NEW</div><span class="product-emoji">🔵</span></div>
+        <div class="product-info">
+          <div class="product-brand">VAPORESSO</div>
+          <div class="product-name">XROS 6 Pod Kit</div>
+          <div class="product-desc">Refillable · 1200mAh · MTL</div>
+          <div class="product-footer"><div class="product-price"><span>R750</span>R595</div><button class="add-btn">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><span class="product-emoji">🟢</span></div>
+        <div class="product-info">
+          <div class="product-brand">NASTY JUICE</div>
+          <div class="product-name">Green Ape Saltnic 30ml</div>
+          <div class="product-desc">50mg · Mango flavour · MTL</div>
+          <div class="product-footer"><div class="product-price">R175</div><button class="add-btn">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><div class="product-badge">SALE</div><span class="product-emoji">🟣</span></div>
+        <div class="product-info">
+          <div class="product-brand">SMOK</div>
+          <div class="product-name">Nord 5 Pod System</div>
+          <div class="product-desc">Adjustable wattage · 2000mAh</div>
+          <div class="product-footer"><div class="product-price"><span>R950</span>R699</div><button class="add-btn">Add to Cart</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DELIVERY BAR -->
+<div class="delivery-bar">
+  <div class="delivery-item"><span class="delivery-icon">🚀</span><div><div class="delivery-title">Free Standard Delivery</div><div class="delivery-desc">On all orders over R800</div></div></div>
+  <div class="delivery-item"><span class="delivery-icon">⚡</span><div><div class="delivery-title">Same Day Delivery</div><div class="delivery-desc">JHB orders before 12pm</div></div></div>
+  <div class="delivery-item"><span class="delivery-icon">🔒</span><div><div class="delivery-title">Secure Payments</div><div class="delivery-desc">Visa, Mastercard, EFT, PayFlex</div></div></div>
+  <div class="delivery-item"><span class="delivery-icon">🛒</span><div><div class="delivery-title">40+ Stores Nationwide</div><div class="delivery-desc">Find your nearest VaporVault</div></div></div>
+</div>
+
+<!-- WHY US -->
+<div class="why-us">
+  <div class="why-us-inner">
+    <div class="why-us-text">
+      <div class="section-tag">Why VaporVault</div>
+      <div class="section-title">SA's Most Trusted Vape Store</div>
+      <p>Since 2018 VaporVault has been South Africa's go-to destination for premium vaping products. We source only the best from trusted brands around the world and bring them directly to you at prices that make sense.</p>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-check">✓</div><div><div class="feature-title">Expert Advice</div><div class="feature-desc">Our team knows every product we stock — we help you find exactly what you need.</div></div></div>
+        <div class="feature-item"><div class="feature-check">✓</div><div><div class="feature-title">Genuine Products Only</div><div class="feature-desc">Every product is 100% authentic, sourced directly from official distributors.</div></div></div>
+        <div class="feature-item"><div class="feature-check">✓</div><div><div class="feature-title">Fast & Reliable Shipping</div><div class="feature-desc">Standard delivery in 2-3 days. Same day delivery available in JHB.</div></div></div>
+        <div class="feature-item"><div class="feature-check">✓</div><div><div class="feature-title">Easy Returns</div><div class="feature-desc">Not happy? We offer hassle-free returns within 7 days of purchase.</div></div></div>
+      </div>
+    </div>
+    <div class="why-us-visual">
+      <div class="why-card"><div class="why-card-num">40+</div><div class="why-card-label">Premium Brands</div></div>
+      <div class="why-card"><div class="why-card-num">500+</div><div class="why-card-label">Products in Stock</div></div>
+      <div class="why-card"><div class="why-card-num">10K+</div><div class="why-card-label">Happy Customers</div></div>
+      <div class="why-card"><div class="why-card-num">8</div><div class="why-card-label">Years in Business</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <h2>Get Exclusive Deals</h2>
+    <p>Subscribe to our newsletter and be the first to know about new arrivals, exclusive deals and special promotions.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email address...">
+      <button>Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">VAPOR<span>VAULT</span></div>
+      <p>South Africa's premium destination for vaping products. Quality, authenticity and service you can trust — since 2018.</p>
+      <div class="footer-socials">
+        <a href="#" class="fsocial">f</a>
+        <a href="#" class="fsocial">in</a>
+        <a href="#" class="fsocial">📷</a>
+        <a href="#" class="fsocial">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">Disposables</a></li>
+        <li><a href="#">Pod Kits</a></li>
+        <li><a href="#">E-Liquids</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Store Locator</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Age Verification Policy</a></li>
+        <li><a href="#">Warranty Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 VaporVault. All rights reserved. 18+ only. Nicotine is addictive.</span>
+    <span>📞 010 000 1234 &nbsp;|&nbsp; info@vaporvault.co.za</span>
+  </div>
+</footer>
+
+</body>
+</html>
